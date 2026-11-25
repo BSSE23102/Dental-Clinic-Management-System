@@ -5,5 +5,6 @@
 - [REST API contract](api-contract.md)
 - [Dependencies, licenses, and cost](dependency-assessment.md)
 - [Frontend development and verification](frontend-guide.md)
+- [Backend development, PostgreSQL, and verification](backend-guide.md)
 
-The current implementation milestone is **frontend first**, as requested. Backend, PostgreSQL, deployment, and final submission remain later milestones. No deployment or Git push has been performed.
+The frontend and PostgreSQL backend are implemented locally. Deployment, browser integration QA, and final submission evidence remain later milestones. This work does not deploy or push changes.

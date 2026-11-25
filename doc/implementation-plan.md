@@ -259,4 +259,12 @@ Drive checklist: final PDF and clickable links; sanitized collection; source arc
 | Render | P13 | T10 |
 | Submission | P14 | Real artifact/link checklist |
 
-Full assessment completion requires persisted API workflows, concurrency-safe bookings, verified deployment and real evidence. Frontend milestone completion means buildable, tested UI with REST integration and clearly separated temporary previews. It does not claim PostgreSQL persistence or deployment before those later phases.
+Full assessment completion requires persisted API workflows, concurrency-safe bookings, verified deployment and real evidence. Frontend milestone completion means buildable, tested UI with REST integration and clearly separated temporary previews.
+
+### Local backend milestone — 25 November 2026
+
+Implemented the Express/PostgreSQL backend in `backend/`, including configuration, migrations, seed guards, layered REST endpoints, persisted dashboard statistics, strict validation, transactions, overlap exclusion constraints, and sanitized errors. Local PostgreSQL uses an isolated password-protected cluster on port 55432; the installed system service is unchanged.
+
+Validation: lint passed; 48 backend tests passed against unit fixtures and a separate PostgreSQL test database. All 18 request examples passed against the running local API and cleaned up their own records. Eight fictional doctors and twenty appointments remain in the application database. Dependency installation reported zero vulnerabilities, and the generated license inventory covers 257 locked packages. See [backend operations and verification](backend-guide.md).
+
+P2–P6 and the persisted dashboard work are implemented locally. Browser integration QA, hosted deployment, screenshots, and final submission evidence remain outstanding. No deployment, commit, or push is part of this milestone.

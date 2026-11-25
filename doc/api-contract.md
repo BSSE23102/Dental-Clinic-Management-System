@@ -1,10 +1,10 @@
-# REST API contract — backend implementation target
+# REST API contract
 
-The frontend implements these requests through RTK Query. The backend has not been created in the current frontend-first milestone.
+The frontend implements these requests through RTK Query. The Express/PostgreSQL backend in `backend/` implements the contract. See [backend setup](../backend/README.md).
 
 ## Conventions
 
-Base `/api`. Positive integer IDs. camelCase JSON. JSON request bodies. Required strings are trimmed. Doctor emails are normalized lowercase. Unknown body fields are rejected by the future server. Date/time input must include an offset; output is UTC ISO. Filters use Asia/Karachi calendar dates.
+Base `/api`. Positive integer IDs. camelCase JSON. JSON request bodies. Required strings are trimmed. Doctor emails are normalized lowercase. Unknown body fields are rejected. Date/time input must include an offset; output is UTC ISO. Filters use Asia/Karachi calendar dates.
 
 Success `{ "data": record }`; collection `{ "data": [], "meta": { "page": 1, "limit": 10, "total": 0, "totalPages": 0 } }`. Defaults page 1 / limit 10, maximum 100. Doctor order name/id; appointment order startsAt/id. Delete 204 has no body.
 
@@ -76,6 +76,6 @@ Conflict example:
 
 Dashboard counts are calculated from persisted rows using one captured server time and database snapshot. Total doctors includes inactive; upcoming means future pending/confirmed; today excludes cancelled; pending counts all pending. upcoming contains the next five enriched appointment records (the empty array above is shape shorthand, not a claimed result).
 
-## Postman plan
+## Postman collection
 
-Folders: health, doctors, appointments, dashboard, negative cases. Environment template includes baseUrl and generated record IDs; no credentials. Assert HTTP statuses, envelope shapes, errors, filter behavior, conflicts, and persistence. Destructive collection runs target local/test only. Examples are illustrative; actual results must be recorded after backend implementation.
+Import `backend/postman/dental-clinic.postman_collection.json`. The collection defaults to loopback and uses generated record IDs with no credentials. Run it only against local fictional data; it creates and deletes its own records. Automated Vitest/Supertest tests additionally verify concurrency, database constraints, migrations, and persistence.

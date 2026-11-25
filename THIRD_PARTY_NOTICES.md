@@ -3,6 +3,7 @@
 The project uses free software and assets with their respective original licenses. The project's MIT license does not replace third-party licenses.
 
 - Runtime npm package notices are generated into `frontend/public/licenses/npm-runtime-notices.txt` and copied to production output. The complete resolved inventory is `doc/third-party-packages.json`.
+- Backend package notices are generated into `backend/THIRD_PARTY_LICENSES.txt`; its resolved inventory is `doc/backend-third-party-packages.json`. Run `npm.cmd --prefix backend run licenses` after installing the lockfile. PostgreSQL uses the PostgreSQL License: https://www.postgresql.org/about/licence/ .
 - Public Sans: Copyright 2015 The Public Sans Project Authors (https://github.com/uswds/public-sans), SIL Open Font License 1.1. Full text: `frontend/public/licenses/PublicSans-OFL.txt`. Source: https://github.com/google/fonts/tree/main/ofl/publicsans . Font is unmodified and self-hosted.
 - Lucide icons: ISC, Copyright Lucide Icons and Contributors; inherited Feather icons retain Cole Bemis's MIT notice. Original texts are included in the generated runtime notice file.
 - Medical stock portrait: photo by Humberto Chávez on Unsplash, https://unsplash.com/photos/FVh_yqLR9eA ; downloaded asset identifier `photo-1559839734-2b71ea197ec2`. Free Unsplash license: https://unsplash.com/license . No paid Unsplash+ asset or API is used. The decorative portrait does not identify or endorse a fictional clinic team member. Unsplash's asset license is distinct from the application's software license.

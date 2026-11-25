@@ -51,9 +51,9 @@ Never assume that the root package's MIT license covers its dependencies. The li
 
 UI/UX Pro Max: MIT; Anthropic frontend-design: Apache-2.0; Impeccable: Apache-2.0; Vercel React best practices: MIT. Guidance requires no new paid account or application AI API. The UI/UX Pro Max source archive was inspected and its local search used. Archive SHA-256: `7CD50556E1A5AA732C06BB485BD431B6F3BFD424CBD620CD86AD66D382F30944`. Resources remain in the ignored frontend/.cache directory; no new runtime package is needed.
 
-## Later backend and hosting
+## Backend and hosting
 
-Planned Express, pg, Zod, CORS, Helmet, express-rate-limit and Supertest are MIT; dotenv is BSD-2-Clause; PostgreSQL uses its permissive PostgreSQL license. Reverify exact versions before adding them. Native SQL migrations avoid an extra migration dependency.
+The implemented backend uses Express 5.3.0, pg 8.23.1, Zod 4.6.7, cors 2.8.6, Helmet 8.3.0, express-rate-limit 8.7.5 and Supertest 7.3.2 under MIT; dotenv 18.0.10 is BSD-2-Clause. PostgreSQL uses its permissive PostgreSQL license. Registry metadata was verified before installation; the installed tree passed the license report and npm reported zero vulnerabilities. Native SQL migrations avoid an extra migration dependency. See [backend dependency purposes](backend-guide.md), `backend-third-party-packages.json`, and `backend/THIRD_PARTY_LICENSES.txt` for the resolved inventory and notices. Additional backend software cost is PKR 0.
 
 Render Free was selected by the user: static site, free web service and expiring free PostgreSQL. No payment method or paid features. Its free database expires after 30 days; export before expiry. Recheck current quotas and card requirements before provisioning. GitHub/Render/Loom/Drive have separate hosted-service terms and are not application libraries. Use only their required free capabilities. No hosting account has been provisioned.
 
