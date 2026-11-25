@@ -1,0 +1,326 @@
+/* Readability refinements preserve the supplied muted-blue visual direction. */
+.navigation-modal {
+  margin: 0;
+  width: min(320px, 90vw);
+  height: 100dvh;
+  max-height: 100dvh;
+  border-radius: 0;
+  border: 0;
+  background: #f1f6f8;
+  padding: 28px 22px;
+}
+.navigation-modal .mobile-nav {
+  width: auto;
+  height: auto;
+  background: none;
+  box-shadow: none;
+  padding: 0;
+}
+:root {
+  --muted: #526b78;
+}
+.hero-copy {
+  background: linear-gradient(90deg, #456d80 0%, #456d80f5 65%, #456d8000 100%);
+}
+.hero-description,
+.hero-kicker,
+.hero-bottom p {
+  color: #fff;
+}
+.hero-kicker,
+.hero-description,
+.hero-link {
+  font-size: 0.875rem;
+}
+.hero-bottom p {
+  font-size: 0.75rem;
+}
+.hero-actions .button {
+  font-size: 0.8125rem;
+  min-height: 44px;
+}
+.hero-link {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+.metric-top p,
+.metric-note,
+.person-cell small,
+.doctor-cell small,
+.date-cell small,
+.section-heading p:not(.eyebrow),
+.care-strip p,
+.sidebar-note p,
+.sidebar-footer div span,
+.workspace-footer,
+.eyebrow,
+.nav-label,
+.brand small,
+.topbar-date,
+.preview-banner,
+.portrait-label span:not(.portrait-icon),
+.field-hint,
+.off-duty,
+.doctor-card-bottom small,
+.list-heading p,
+.filter-controls .field > label,
+.timezone-note,
+.contact-list dt,
+.appointment-doctor small {
+  font-size: 0.75rem;
+  color: #526b78;
+}
+.metric-top p,
+.person-cell strong,
+.doctor-cell strong,
+.doctor-cell small,
+.date-cell strong,
+.date-cell small,
+.badge,
+.status-action,
+th,
+td,
+.button,
+.topbar .button,
+.field > label,
+.field > input,
+.field > select,
+.field > textarea,
+.search-control input,
+.doctor-card-title p,
+.doctor-card-info p,
+.doctor-card-bottom > span,
+.pagination,
+.pagination .button,
+.filter-controls .field > input,
+.filter-controls .field > select,
+.page-summary div span,
+.contact-list dd,
+.weekly-hours > div,
+.reason-block p {
+  font-size: 0.875rem;
+}
+.portrait-label strong {
+  font-size: 0.75rem;
+}
+.portrait-label span:not(.portrait-icon) {
+  font-size: 0.7rem;
+}
+.person-cell small,
+.doctor-cell small,
+.date-cell small {
+  color: #526b78;
+}
+.icon-button {
+  color: #536e7c;
+}
+.field > input,
+.field > select,
+.field > textarea,
+.time-pair > input {
+  border-color: #81949e;
+}
+.field input::placeholder,
+.field textarea::placeholder,
+.search-control input::placeholder {
+  color: #607784;
+}
+.metric-note {
+  line-height: 1.6;
+}
+.metric {
+  padding-inline: 22px;
+}
+.metric-top svg {
+  color: #537585;
+}
+.sidebar-note h3 {
+  font-size: 1rem;
+}
+.sidebar-note p {
+  line-height: 1.8;
+}
+.nav-label {
+  color: #526b78;
+}
+.row-actions .icon-button,
+.doctor-card-bottom .icon-button,
+.search-control .icon-button {
+  min-width: 44px;
+  min-height: 44px;
+}
+.off-duty,
+.weekly-hours dd.off-duty,
+.page-number,
+.filter-error,
+.field-error,
+.availability-note,
+.notice,
+.inline-error {
+  font-size: 0.8125rem;
+}
+.field-hint,
+.form-section-heading p,
+.modal-heading .muted,
+.detail-section-title p,
+.mobile-record-detail,
+.mobile-record-detail > span {
+  font-size: 0.8125rem;
+  color: #526b78;
+}
+.availability-row .checkbox-label,
+.time-pair > input {
+  font-size: 0.8125rem;
+  min-height: 44px;
+}
+.badge--pending {
+  color: #725513;
+}
+.badge--confirmed {
+  color: #275c79;
+}
+.badge--completed,
+.badge--active {
+  color: #2e684e;
+}
+.badge--cancelled,
+.badge--inactive {
+  color: #77505b;
+}
+.mobile-record-heading .person-cell strong {
+  font-size: 0.875rem;
+}
+.mobile-record-detail,
+.mobile-record-detail > span {
+  color: #526b78;
+}
+.care-strip .button {
+  font-size: 0.875rem;
+  min-height: 44px;
+}
+@media (max-width: 1279px) {
+  .metric {
+    padding-inline: 16px;
+  }
+  .hero h1 {
+    font-size: 2.6rem;
+  }
+  .hero-description {
+    max-width: 350px;
+    font-size: 0.8125rem;
+  }
+  .hero-kicker {
+    font-size: 0.75rem;
+  }
+  .hero-actions {
+    gap: 13px;
+  }
+  .hero-actions .button,
+  .hero-link {
+    font-size: 0.75rem;
+  }
+  .hero-copy {
+    width: 70%;
+  }
+  .hero-portrait {
+    left: 57%;
+  }
+}
+@media (max-width: 767px) {
+  .hero {
+    min-height: 450px;
+  }
+  .hero-copy {
+    width: 100%;
+    min-height: 450px;
+    background: linear-gradient(
+      90deg,
+      #456d80 0%,
+      #456d80f5 53%,
+      #456d8099 100%
+    );
+  }
+  .hero h1 {
+    font-size: 2.45rem;
+  }
+  .hero-description {
+    font-size: 0.8125rem;
+    max-width: 235px;
+  }
+  .hero-kicker {
+    font-size: 0.69rem;
+    max-width: 245px;
+  }
+  .hero-actions .button,
+  .hero-link {
+    font-size: 0.8125rem;
+  }
+  .hero-bottom p {
+    font-size: 0.7rem;
+    color: white;
+  }
+  .metric {
+    padding: 20px 15px;
+  }
+  .metric-top p {
+    font-size: 0.75rem;
+  }
+  .metric-note {
+    font-size: 0.7rem;
+  }
+  .metric-number {
+    font-size: 2.7rem;
+  }
+  .preview-banner,
+  .preview-banner a {
+    font-size: 0.7rem;
+  }
+  .topbar .button {
+    font-size: 0.75rem;
+  }
+  .button,
+  .pagination .button,
+  .care-strip > .button {
+    font-size: 0.8125rem;
+    min-height: 44px;
+  }
+  .availability-row {
+    flex-wrap: wrap;
+  }
+  .availability-row > .checkbox-label {
+    min-width: 100px;
+  }
+  .time-pair {
+    flex: 1;
+    gap: 5px;
+  }
+  .time-pair > input {
+    width: 96px;
+  }
+  .hero-portrait {
+    left: 43%;
+  }
+  .person-cell small {
+    font-size: 0.8125rem;
+  }
+  .section-heading p:not(.eyebrow) {
+    font-size: 0.8125rem;
+  }
+  .workspace-footer span:last-child {
+    font-size: 0.75rem;
+  }
+  .care-strip h2 {
+    font-size: 1rem;
+  }
+  .care-strip p {
+    font-size: 0.75rem;
+  }
+  .modal-heading .muted {
+    font-size: 0.8125rem;
+  }
+  .empty-state p,
+  .error-state p {
+    font-size: 0.875rem;
+  }
+}

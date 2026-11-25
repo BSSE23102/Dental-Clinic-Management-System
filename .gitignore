@@ -10,5 +10,6 @@ coverage/
 .DS_Store
 Thumbs.db
 .impeccable/
+.cache/
 frontend/test-results/
 frontend/playwright-report/
