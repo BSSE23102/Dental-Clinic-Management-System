@@ -11,5 +11,6 @@ coverage/
 Thumbs.db
 .impeccable/
 .cache/
+backend/.local/
 frontend/test-results/
 frontend/playwright-report/
